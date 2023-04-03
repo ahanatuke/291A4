@@ -19,7 +19,7 @@ def main():
 
     with open("songwriters.json", encoding='utf-8') as sFile:
         sFileData = sFile.read()
-        songwritersFile =  bson.json_util.loads(sFileData)
+        songwritersFile = bson.json_util.loads(sFileData)
 
 
     if isinstance(recordingsFile, list):
