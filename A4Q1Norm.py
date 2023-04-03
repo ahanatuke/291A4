@@ -5,8 +5,7 @@ from A4utils import connectPort
 #recordings by each such songwriter
 
 def Q1():
-    #client = connectPort()
-    client = MongoClient()
+    client = connectPort()
     db = client['A4dbNorm']
     swCol = db['songwriters']
 

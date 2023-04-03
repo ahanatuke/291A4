@@ -6,8 +6,7 @@ from A4utils import connectPort
 
 
 def Q2():
-    #client = connectPort()
-    client = MongoClient() #todo fix me for hand in
+    client = connectPort()
 
     db = client['A4dbNorm']
     rcCol = db['recordings']
