@@ -13,5 +13,6 @@ def Q1():
     for i in list(results):
         print(i)
 
+    client.close()
 
 Q1()
