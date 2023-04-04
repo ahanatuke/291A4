@@ -27,7 +27,8 @@ def Q2():
             }]
     )
 
-    print(list(results))
+    for i in list(results):
+        print(i)
 
     client.close()
 
