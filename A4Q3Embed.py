@@ -6,19 +6,11 @@ from A4utils import connectPort
 def Q3():
     client = connectPort()
 
-    db = client['A4dbNorm']
-    swCol = db['songwriters']
+    db = client['A4dbEmbed']
+    swCol = db['SongwritersRecordings']
 
     results = swCol.aggregate(
         [
-            {
-                '$lookup': {
-                    'from': 'recordings',
-                    'localField': 'recordings',
-                    'foreignField': 'recording_id',
-                    'as': 'recordings'
-                }
-            },
             {
                 '$unwind': '$recordings'
             },
