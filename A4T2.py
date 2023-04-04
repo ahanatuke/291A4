@@ -8,6 +8,7 @@ from A4utils import connectPort
 def main():
     cli = connectPort()
 
+    cli.drop_database('A4dbEmbed')
     db = cli["A4dbEmbed"]
 
 
@@ -42,6 +43,10 @@ def main():
                                'name' : i['name'],
                                'reputation' : i['reputation'],
                                'recordings' : list(records)})
+
+
+    songwritersCol.drop()
+    recordingsCol.drop()
 
     cli.close()
 
