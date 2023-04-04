@@ -14,7 +14,7 @@ def main():
 
     songwritersCol = db["songwriterTemp"]
     recordingsCol = db['recordTemp']
-    collection = db['songwritersRecords']
+    collection = db['SongwritersRecordings']
 
     with open("recordings.json", encoding='utf-8') as rFile:
         rFileData = rFile.read()

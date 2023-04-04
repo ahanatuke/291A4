@@ -8,7 +8,7 @@ from A4utils import connectPort
 def Q2():
     client = connectPort()
     db = client['A4dbEmbed']
-    collection = db['songwritersRecords']
+    collection = db['SongwritersRecordings']
 
     results = collection.aggregate(
         [
@@ -27,10 +27,6 @@ def Q2():
             }]
     )
 
-    for i in list(results):
-        print(i)
-
-    #results = collection.find()
     print(list(results))
 
     client.close()

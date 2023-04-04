@@ -7,7 +7,7 @@ from A4utils import connectPort
 def Q1():
     client = connectPort()
     db = client['A4dbEmbed']
-    collection = db['songwritersRecords']
+    collection = db['SongwritersRecordings']
 
     results = collection.find({"recordings" : {"$not" :{"$size":0}}},{"songwriter_id" : 1, "name" : 1 , "num_recordings" : {"$size" : "$recordings"}})
     for i in list(results):
