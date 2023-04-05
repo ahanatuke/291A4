@@ -1,4 +1,3 @@
-from pymongo import MongoClient
 from A4utils import connectPort
 #Q1: Find the ids and names of each songwriter that
 # has at least one recording and the number of

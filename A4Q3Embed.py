@@ -1,4 +1,3 @@
-from pymongo import MongoClient
 from A4utils import connectPort
 # Q3: Find the sum of the length of all recordings
 # for each songwriter along with the songwriter’s id.

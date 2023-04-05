@@ -1,4 +1,3 @@
-from pymongo import MongoClient
 from A4utils import connectPort
 # Q2: Write a query to get the average rhythmicality
 # for all recordings that have a recording_id beginning

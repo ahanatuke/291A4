@@ -1,4 +1,3 @@
-from pymongo import MongoClient
 from A4utils import connectPort
 import datetime
 # Q4: For each recording that was issued after

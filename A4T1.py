@@ -1,7 +1,4 @@
 import bson.json_util
-from pymongo import MongoClient
-import sys
-import json
 from A4utils import connectPort
 
 
