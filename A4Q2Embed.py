@@ -21,13 +21,14 @@ def Q2():
             {
                 "$group":
                     {
-                        "_id": " ",
+                        "_id": "",
                         "avg_rhythmicality": {"$avg": "$recordings.rhythmicality"},
                     }
             }]
     )
 
-    print(list(results))
+    for i in list(results):
+        print(i)
 
     client.close()
 

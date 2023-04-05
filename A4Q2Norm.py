@@ -19,7 +19,7 @@ def Q2():
             {
             "$group" :
                 {
-                    "_id" : " " ,
+                    "_id" : "" ,
                     "avg_rhythmicality" : {"$avg" : "$rhythmicality"},
                 }
         }]
